@@ -1,10 +1,12 @@
 package com.example.instagramapplicationclone.Profile;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import com.example.instagramapplicationclone.R;
 import com.example.instagramapplicationclone.utilities.BottomNavViewOrganiser;
@@ -16,11 +18,24 @@ public class ProfileActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
-        setupBottomNavView();
+        //setupBottomNavView();
+        toolBarSetup();
     }
 
     private void toolBarSetup(){
-
+        Toolbar toolbar=findViewById(R.id.profileToolBar);
+        setSupportActionBar(toolbar);
+        toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                Log.d("onMenuItemClick","Menu item clicked: "+item);
+                switch (item.getItemId()){
+                    case R.id.profileMenu:
+                        Log.d("on profile item clicked","Navigating to profile preferences");
+                }
+                return false;
+            }
+        });
     }
 
 
@@ -35,5 +50,11 @@ public class ProfileActivity extends AppCompatActivity {
         Menu menu=bottomNavigationView.getMenu();
         MenuItem menuItem = menu.getItem(ACTIVITY_NUM);
         menuItem.setChecked(true);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.profile_menu,menu);
+        return true;
     }
 }
