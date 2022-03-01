@@ -4,7 +4,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
 
         >
@@ -24,19 +24,17 @@
             android:id="@+id/textPost"
             android:layout_width="67dp"
             android:layout_height="32dp"
-            android:layout_marginBottom="596dp"
             android:text="Posts"
             android:textAlignment="center"
             android:textColor="@color/black"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textPostCount"
-            app:layout_constraintVertical_bias="0.236" />
+            app:layout_constraintTop_toTopOf="@+id/textPostCount" />
 
         <TextView
             android:id="@+id/textFollowingCount"
-            android:layout_width="74dp"
-            android:layout_height="28dp"
+            android:layout_width="72dp"
+            android:layout_height="29dp"
             android:text="00"
             android:textAlignment="center"
             android:textColor="@color/black"
@@ -46,16 +44,14 @@
 
         <TextView
             android:id="@+id/textFollowing"
-            android:layout_width="71dp"
-            android:layout_height="29dp"
-            android:layout_marginBottom="628dp"
+            android:layout_width="74dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="36dp"
             android:text="Following"
             android:textAlignment="center"
             android:textColor="@color/black"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textFollowingCount"
-            app:layout_constraintVertical_bias="0.937" />
+            app:layout_constraintBottom_toBottomOf="@+id/textEditYourProfile"
+            app:layout_constraintEnd_toEndOf="parent" />
 
         <TextView
             android:id="@+id/textFollowersCount"
@@ -66,7 +62,7 @@
             android:textColor="@color/black"
             android:textSize="18sp"
             app:layout_constraintEnd_toStartOf="@+id/textFollowingCount"
-            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintHorizontal_bias="0.494"
             app:layout_constraintStart_toEndOf="@+id/textPostCount"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -82,23 +78,21 @@
             app:layout_constraintHorizontal_bias="0.505"
             app:layout_constraintStart_toEndOf="@+id/textPost"
             app:layout_constraintTop_toBottomOf="@+id/textFollowersCount"
-            app:layout_constraintVertical_bias="0.017" />
+            app:layout_constraintVertical_bias="0.008" />
 
         <TextView
             android:id="@+id/textEditYourProfile"
-            android:layout_width="214dp"
-            android:layout_height="28dp"
-            android:layout_marginBottom="568dp"
+            android:layout_width="203dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="12dp"
             android:background="@drawable/black_border_edityourprofile"
             android:text="Edit Your Profile"
             android:textAlignment="center"
             android:textColor="@color/black"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintHorizontal_bias="0.552"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textFollowers"
-            app:layout_constraintVertical_bias="0.375" />
+            app:layout_constraintTop_toBottomOf="@+id/textFollowers" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </merge>
