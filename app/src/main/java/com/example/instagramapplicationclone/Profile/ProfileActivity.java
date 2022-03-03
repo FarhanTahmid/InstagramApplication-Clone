@@ -7,6 +7,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -17,11 +18,14 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class ProfileActivity extends AppCompatActivity {
     private static final int ACTIVITY_NUM=4;
+    private ProgressBar progressBar;
     private Context mContext=ProfileActivity.this;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
+        progressBar=findViewById(R.id.profileProgressBar);
+        progressBar.setVisibility(View.GONE);
         setupBottomNavView();
         toolBarSetup();
     }
