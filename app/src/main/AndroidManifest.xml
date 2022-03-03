@@ -8,9 +8,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.InstagramApplicationClone"
-
-        >
+        android:theme="@style/Theme.InstagramApplicationClone">
+        <activity
+            android:name=".Profile.AccountSettings"
+            android:exported="false" />
         <activity
             android:name=".Profile.ProfileActivity"
             android:exported="false" />

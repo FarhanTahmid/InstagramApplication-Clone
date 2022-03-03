@@ -1,9 +1,12 @@
 package com.example.instagramapplicationclone.Profile;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -14,6 +17,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class ProfileActivity extends AppCompatActivity {
     private static final int ACTIVITY_NUM=4;
+    private Context mContext=ProfileActivity.this;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,15 +29,13 @@ public class ProfileActivity extends AppCompatActivity {
     private void toolBarSetup(){
         Toolbar toolbar=findViewById(R.id.profileToolBar);
         setSupportActionBar(toolbar);
-        toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
+        ImageView profileMenu=findViewById(R.id.profileMenu);
+        profileMenu.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onMenuItemClick(MenuItem item) {
-                Log.d("onMenuItemClick","Menu item clicked: "+item);
-                switch (item.getItemId()){
-                    case R.id.profileMenu:
-                        Log.d("on profile item clicked","Navigating to profile preferences");
-                }
-                return false;
+            public void onClick(View v) {
+                Intent intent=new Intent(mContext,AccountSettings.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intent);
             }
         });
     }
@@ -52,9 +54,4 @@ public class ProfileActivity extends AppCompatActivity {
         menuItem.setChecked(true);
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.profile_menu,menu);
-        return true;
-    }
 }

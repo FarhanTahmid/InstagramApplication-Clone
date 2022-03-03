@@ -3,9 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/CODES/AndroidStudio/InstagramApplicationClone/app/src/main/res/drawable-anydpi/ic_backArrow.xml" value="0.1065" />
         <entry key="..\:/CODES/AndroidStudio/InstagramApplicationClone/app/src/main/res/drawable-v24/white_grey_border_top.xml" value="0.299" />
         <entry key="..\:/CODES/AndroidStudio/InstagramApplicationClone/app/src/main/res/drawable/black_border_edityourprofile.xml" value="0.1965" />
+        <entry key="..\:/CODES/AndroidStudio/InstagramApplicationClone/app/src/main/res/drawable/grey_border_bottom.xml" value="0.217" />
         <entry key="..\:/CODES/AndroidStudio/InstagramApplicationClone/app/src/main/res/drawable/white_grey_border_bottom.xml" value="0.25" />
+        <entry key="..\:/CODES/AndroidStudio/InstagramApplicationClone/app/src/main/res/layout/activity_account_settings.xml" value="0.3489583333333333" />
         <entry key="..\:/CODES/AndroidStudio/InstagramApplicationClone/app/src/main/res/layout/activity_home.xml" value="0.3265625" />
         <entry key="..\:/CODES/AndroidStudio/InstagramApplicationClone/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/CODES/AndroidStudio/InstagramApplicationClone/app/src/main/res/layout/activity_profile.xml" value="0.3333333333333333" />
@@ -14,10 +17,12 @@
         <entry key="..\:/CODES/AndroidStudio/InstagramApplicationClone/app/src/main/res/layout/fragment_camera.xml" value="0.1" />
         <entry key="..\:/CODES/AndroidStudio/InstagramApplicationClone/app/src/main/res/layout/fragment_home.xml" value="0.1" />
         <entry key="..\:/CODES/AndroidStudio/InstagramApplicationClone/app/src/main/res/layout/fragment_messages.xml" value="0.1" />
+        <entry key="..\:/CODES/AndroidStudio/InstagramApplicationClone/app/src/main/res/layout/layout_account_settings_center_part.xml" value="0.3489583333333333" />
         <entry key="..\:/CODES/AndroidStudio/InstagramApplicationClone/app/src/main/res/layout/layout_bottom_navigation_view.xml" value="0.2916666666666667" />
         <entry key="..\:/CODES/AndroidStudio/InstagramApplicationClone/app/src/main/res/layout/layout_center_profile.xml" value="0.3489583333333333" />
         <entry key="..\:/CODES/AndroidStudio/InstagramApplicationClone/app/src/main/res/layout/layout_center_viewpager.xml" value="0.33" />
         <entry key="..\:/CODES/AndroidStudio/InstagramApplicationClone/app/src/main/res/layout/layout_top_tabs.xml" value="0.3067708333333333" />
+        <entry key="..\:/CODES/AndroidStudio/InstagramApplicationClone/app/src/main/res/layout/snippet_top_account_settings_top_bar.xml" value="0.3489583333333333" />
         <entry key="..\:/CODES/AndroidStudio/InstagramApplicationClone/app/src/main/res/layout/snippet_top_profilebar.xml" value="0.3333333333333333" />
         <entry key="..\:/CODES/AndroidStudio/InstagramApplicationClone/app/src/main/res/layout/snippet_top_profle_infos.xml" value="0.33" />
         <entry key="..\:/CODES/AndroidStudio/InstagramApplicationClone/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.3489583333333333" />
