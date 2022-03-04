@@ -1,4 +1,4 @@
-package com.example.instagramapplicationclone.Home;
+package com.example.instagramapplicationclone.utilities;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;

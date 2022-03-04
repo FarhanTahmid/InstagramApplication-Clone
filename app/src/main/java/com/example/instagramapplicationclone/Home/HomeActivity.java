@@ -9,6 +9,7 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.example.instagramapplicationclone.R;
 import com.example.instagramapplicationclone.utilities.BottomNavViewOrganiser;
+import com.example.instagramapplicationclone.utilities.SectionsPagerAdapter;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.tabs.TabLayout;
 
