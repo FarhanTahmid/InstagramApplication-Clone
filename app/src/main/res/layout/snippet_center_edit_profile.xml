@@ -1,0 +1,280 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profilePicture"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                />
+
+            <TextView
+                android:id="@+id/changeProfilePhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profilePicture"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3dp"
+                android:text="Change Photo"
+                android:textColor="@color/linkBlue"
+                android:textSize="16sp" />
+
+            <!--To display User name-->
+            <RelativeLayout
+                android:id="@+id/editProfRelLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@id/profilePicture"
+                android:layout_marginTop="70dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Edit Your User Name"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/editUserNameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/editProfRelLayout1"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/grey_border_bottom">
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_person_no_outline"
+                    android:layout_centerVertical="true"
+                    />
+                <EditText
+                    android:id="@+id/currentUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:inputType="textNoSuggestions" />
+
+            </RelativeLayout>
+
+            <!--To display display name-->
+            <RelativeLayout
+                android:id="@+id/editProfRelLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@+id/editUserNameLayout"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Edit Your Display Name"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/editDisplayNameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/editProfRelLayout2"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/grey_border_bottom">
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_person_outline"
+                    android:layout_centerVertical="true"
+                    />
+                <EditText
+                    android:id="@+id/currentDisplayName"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:inputType="textNoSuggestions" />
+            </RelativeLayout>
+
+            <!--To display edit bio-->
+            <RelativeLayout
+                android:id="@+id/editProfRelLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@id/editDisplayNameLayout"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Edit Your Bio"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/editBioLayout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/editProfRelLayout3"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/grey_border_bottom">
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_edit"
+                    android:layout_centerVertical="true"
+                    />
+                <EditText
+                    android:id="@+id/editProfileBio"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:inputType="textNoSuggestions" />
+            </RelativeLayout>
+
+            <!--To Change link name-->
+            <RelativeLayout
+                android:id="@+id/editProfRelLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@+id/editBioLayout"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Link to your profile"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/editLinkLayout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/editProfRelLayout4"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/grey_border_bottom">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_link"
+                    android:layout_centerVertical="true"
+                    />
+
+
+                <EditText
+                    android:id="@+id/editLink"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:inputType="textNoSuggestions" />
+            </RelativeLayout>
+
+            <!--Private Information-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editLinkLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="Private Information"
+                android:textSize="25sp"
+                android:id="@+id/privateInfoTextView"
+                android:background="@drawable/grey_border_bottom">
+            </TextView>
+
+            <!---Email Field Private Information-->
+
+            <RelativeLayout
+                android:id="@+id/editProfRelLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@+id/privateInfoTextView"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/emailLayout"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@id/editProfRelLayout5"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/grey_border_bottom">
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_email_icon"
+                    android:layout_centerVertical="true"
+                    />
+
+                <EditText
+                    android:id="@+id/emailID"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:inputType="textNoSuggestions" />
+            </RelativeLayout>
+
+            <!--Phone number-->
+            <RelativeLayout
+                android:id="@+id/editProfRelLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@+id/emailLayout"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone Number"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/phoneNumberLayout"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@id/editProfRelLayout6"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/grey_border_bottom">
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_phone"
+                    android:layout_centerVertical="true"
+                    />
+                <EditText
+                    android:id="@+id/phoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:inputType="textNoSuggestions" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</merge>

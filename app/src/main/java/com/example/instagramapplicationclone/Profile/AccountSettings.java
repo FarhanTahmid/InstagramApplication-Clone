@@ -62,6 +62,5 @@ public class AccountSettings extends AppCompatActivity {
         pagerAdapter=new SectionsStatePagerAdapter(getSupportFragmentManager());
         pagerAdapter.addFragment(getString(R.string.edit_profile), new EditProfileFragment());
         pagerAdapter.addFragment(getString(R.string.sign_out),new SignOutFragment());
-
     }
 }
